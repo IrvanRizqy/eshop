@@ -16,6 +16,15 @@ public class ProductRepository {
         return product;
     }
 
+    public Product findById(String id) {
+        for (Product product : productData) {
+            if (product.getProductId().equals(id)) {
+                return product;
+            }
+        }
+        return null; // Return null if the product with the given ID is not found
+    }
+
     public Iterator<Product> findAll() {
         return productData.iterator();
     }
