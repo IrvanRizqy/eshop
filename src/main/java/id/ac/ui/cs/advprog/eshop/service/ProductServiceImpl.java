@@ -38,4 +38,7 @@ public class ProductServiceImpl implements ProductService{
     public Product update(Product product) {
         return null;
     }
+
+    @Override
+    public void delete(String id) {}
 }
